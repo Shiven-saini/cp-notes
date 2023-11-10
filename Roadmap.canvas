@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"fb0230c6da54d618","type":"text","text":"CP Roadmap","x":-600,"y":-560,"width":250,"height":60,"color":"1"},
+		{"id":"6bd6fe4d5bf6f03d","type":"file","file":"Resources/cp-book.pdf","x":-540,"y":-440,"width":320,"height":340},
+		{"id":"06958e9667c51774","x":-535,"y":-360,"width":250,"height":60,"type":"text","text":""},
+		{"id":"5921fd7a57c6c142","x":-200,"y":-530,"width":250,"height":60,"type":"text","text":"JavaTpoint DSA Full"}
+	],
+	"edges":[
+		{"id":"baa1f48d530a9949","fromNode":"fb0230c6da54d618","fromSide":"bottom","toNode":"6bd6fe4d5bf6f03d","toSide":"top"},
+		{"id":"1ee3b9b6b365e5ac","fromNode":"fb0230c6da54d618","fromSide":"right","toNode":"5921fd7a57c6c142","toSide":"left"}
+	]
+}

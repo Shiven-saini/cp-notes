@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "0bd9319ea91fc8b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f5b7d66cb978d34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97c014fd00194950",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Resources/cp-book.pdf"
+              }
+            }
+          },
+          {
+            "id": "0a1b0842d3bd51ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CP-Book Notes/Chapter-4 Data structures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "29ba4e65bc703a0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "bbf33addce23c4dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "923a8f2665e7d48f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3dde1a9a15e4bea0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2f029a8b92429e1a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "88d4595f2b471732",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8d0bb583501e694",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e18b385cc34ae73",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CP-Book Notes/Chapter-4 Data structures.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "91098b814d9871aa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CP-Book Notes/Chapter-4 Data structures.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1979a7dfd00ec053",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1b405611147b48c7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CP-Book Notes/Chapter-4 Data structures.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0a1b0842d3bd51ac",
+  "lastOpenFiles": [
+    "Resources/cp-book.pdf",
+    "CP-Book Notes/Chapter-4 Data structures.md",
+    "CP-Book Notes/Chapter-3 Sorting.md",
+    "Untitled.md",
+    "Daily Assignment.md",
+    "COI Prep.md",
+    "COA.md",
+    "CP-Book Notes/Chapter-2 Time Complexity.md",
+    "CP-Book Notes/Chapter-1 Introduction.md",
+    "Roadmap.canvas",
+    "Resources/Pasted image 20231106172354.png",
+    "Resources/Pasted image 20231103224358.png",
+    "Resources/Pasted image 20231103224329.png",
+    "Resources/Pasted image 20231103222436.png",
+    "CP-Book Notes",
+    "DSA/Starting point.md",
+    "DSA/FCC-Summary.md",
+    "Article.md",
+    "Attachments",
+    "DSA",
+    "DSA.md",
+    "Resources"
+  ]
+}
