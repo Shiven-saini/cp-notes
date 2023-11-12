@@ -77,7 +77,7 @@ An **Iterator** is a variable that points to an element in a data structure.
 - `begin()` & `end()` are two most used iterators.
 - `begin()` returns the address of first element.
 - `end()` returns the address of the position 1 next to last element.
-![[Pasted image 20231112072129.png]]
+![[Resources/Pasted image 20231112072129.png]]
 
 - Functionalities of common iterators.
 ```cpp
