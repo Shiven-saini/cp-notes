@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "97c014fd00194950",
+            "id": "7ee99d12396d2d13",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "0a1b0842d3bd51ac",
+            "id": "97c014fd00194950",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CP-Book Notes/Chapter-4 Data structures.md",
+                "file": "CP-Book Notes/Chapter-5 Complete Search.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CP-Book Notes/Chapter-4 Data structures.md",
+                "file": "CP-Book Notes/Chapter-5 Complete Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CP-Book Notes/Chapter-4 Data structures.md",
+                "file": "CP-Book Notes/Chapter-5 Complete Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CP-Book Notes/Chapter-4 Data structures.md"
+                "file": "CP-Book Notes/Chapter-5 Complete Search.md"
               }
             }
           }
@@ -159,13 +159,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a1b0842d3bd51ac",
+  "active": "97c014fd00194950",
   "lastOpenFiles": [
     "Resources/cp-book.pdf",
+    "CP-Book Notes/Chapter-5 Complete Search.md",
+    "Resources/Pasted image 20231112124819.png",
+    "Resources/Pasted image 20231112124553.png",
+    "Resources/Pasted image 20231112124352.png",
+    "Resources/Pasted image 20231112124137.png",
+    "Resources/Pasted image 20231112123335.png",
+    "Resources/Pasted image 20231112120734.png",
+    "Resources/Pasted image 20231112120518.png",
+    "Resources/Pasted image 20231112101909.png",
+    "CP-Book Notes/Chapter-7 Dynamic programming.md",
     "CP-Book Notes/Chapter-4 Data structures.md",
     "Resources/Pasted image 20231112072129.png",
     "Resources/Pasted image 20231112072125.png",
-    "Resources/Pasted image 20231112072117.png",
     "CP-Book Notes/Chapter-3 Sorting.md",
     "Untitled.md",
     "Daily Assignment.md",
@@ -174,10 +183,6 @@
     "CP-Book Notes/Chapter-2 Time Complexity.md",
     "CP-Book Notes/Chapter-1 Introduction.md",
     "Roadmap.canvas",
-    "Resources/Pasted image 20231106172354.png",
-    "Resources/Pasted image 20231103224358.png",
-    "Resources/Pasted image 20231103224329.png",
-    "Resources/Pasted image 20231103222436.png",
     "CP-Book Notes",
     "DSA/Starting point.md",
     "DSA/FCC-Summary.md",
