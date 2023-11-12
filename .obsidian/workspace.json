@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "88d4595f2b471732",
@@ -162,6 +163,9 @@
   "lastOpenFiles": [
     "Resources/cp-book.pdf",
     "CP-Book Notes/Chapter-4 Data structures.md",
+    "Resources/Pasted image 20231112072129.png",
+    "Resources/Pasted image 20231112072125.png",
+    "Resources/Pasted image 20231112072117.png",
     "CP-Book Notes/Chapter-3 Sorting.md",
     "Untitled.md",
     "Daily Assignment.md",
