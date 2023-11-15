@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CP-Book Notes/Chapter-5 Complete Search.md",
+                "file": "Resources/cp-book.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CP-Book Notes/Chapter-5 Complete Search.md",
+                "file": "Resources/cp-book.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CP-Book Notes/Chapter-5 Complete Search.md"
+                "file": "Resources/cp-book.pdf"
               }
             }
           }
@@ -159,10 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97c014fd00194950",
+  "active": "7ee99d12396d2d13",
   "lastOpenFiles": [
-    "Resources/cp-book.pdf",
     "CP-Book Notes/Chapter-5 Complete Search.md",
+    "Resources/cp-book.pdf",
     "Resources/Pasted image 20231112124819.png",
     "Resources/Pasted image 20231112124553.png",
     "Resources/Pasted image 20231112124352.png",
