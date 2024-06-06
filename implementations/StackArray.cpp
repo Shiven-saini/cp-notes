@@ -7,7 +7,6 @@ using std::cout, std::cin, std::cerr, std::endl;
 
 class StackArray{
     // TODO 2: Implement a static method for interface functions.
-    // let's do it right now.
 private:
     int size;
     int top;
@@ -18,16 +17,12 @@ private:
     }
 public:
     // Init stack with default size of 10.
-    StackArray(){
-        addr = allocateMemory(10);
-        top = -1;
-        size = 10;
+    StackArray() : top(-1), size(10) {
+        addr = allocateMemory(size);
     }
 
-    explicit StackArray(int _size){
+    explicit StackArray(int _size) : top(-1), size(_size) {
         addr = allocateMemory(_size);
-        top = -1;
-        size = _size;
     }
 
     bool isEmpty() const {
@@ -77,6 +72,7 @@ public:
         return x;
     }
 
+    // TODO 1: Implement a function to fill the stack with random values.
     void populate(int _lim = 10){
         srand((unsigned) time(NULL));
         for(int i=0; i<size; i++, top++){
