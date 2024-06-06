@@ -6,7 +6,6 @@ using std::cout, std::cin, std::cerr, std::endl;
 
 
 class StackArray{
-    // TODO 2: Implement a static method for interface functions.
 private:
     int size;
     int top;
@@ -80,6 +79,7 @@ public:
         }
     }
 
+    // TODO 2: Implement a static method for interface functions.
     static void interface(){
         cout << "Stack class written by Shiven Saini!" << endl;
         cout << "Default initialized size of the stack is 10 elements." << endl;
