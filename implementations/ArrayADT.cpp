@@ -11,6 +11,7 @@ private:
     int* allocateMemory(int _size) {
         return new int[_size];
     }
+
     void swap(int& a, int& b){
         int temp = a;
         a = b;
@@ -44,10 +45,28 @@ public:
     // Default constructor with empty parameters. (Default size is 10 elements)
     ArrayADT() : size(10), length(0) {
         addr = allocateMemory(size);
+        srand((unsigned) time(NULL));
     }
 
     ArrayADT(int _size) : size(_size), length(0) {
         addr = allocateMemory(size);
+        srand((unsigned) time(NULL));
+    }
+
+    ArrayADT operator+ (const ArrayADT& arr) {
+        int newSize = this->size + arr.size;
+
+        ArrayADT temp(newSize);
+        temp.length = this->length + arr.length;
+
+        for(int i=0; i<this->length; i++) {
+            temp.addr[i] = this->addr[i];
+        }
+        for(int i=0, j=this->length; i<arr.length; i++, j++){
+            temp.addr[j] = arr.addr[i];
+        }
+
+        return temp;
     }
 
     ~ArrayADT() {
@@ -56,10 +75,10 @@ public:
         cout << "Done!" << endl;
     }
 
+public:
     void populate(int lim = 10){
-        srand((unsigned) time(NULL));
         for (int i=0; i<size; i++, length++){
-            addr[i] = 1 +(rand() % lim);
+            addr[i] = 1 + ( rand() % lim );
         }
     }
 
@@ -77,6 +96,7 @@ public:
     void insert(int x) {
         if(length==size){
             cout << "Error: array is already filled to the limit!" << endl;
+            cout << "Maybe try expanding the array using expand() function." << endl;
             return;
         }
         addr[length++] = x;
@@ -85,6 +105,7 @@ public:
     void insert(int pos, int x) {
         if(length==size){
             cout << "Error: array is already filled to the limit!" << endl;
+            cout << "Maybe try expanding the array using expand() function." << endl;
             return;
         }
 
@@ -194,7 +215,7 @@ public:
         /* allocate new array on the heap memory.
          * copy all the elements upto length number to this new array.
          * make the addr pointer to point to this new memory location.
-         *  free the memory of older array.
+         * free the memory of older array.
          */
         // default size to expand is double.
         if (_size != 0) size += _size;
@@ -223,18 +244,17 @@ public:
         cout << "\t10. search(value) : to search for the index of given value." << endl;
         cout << "\t11. reverse() : to reverse the array." << endl;
         cout << "\t12. reverseButWorse() : to reverse the array. (Another not recommended implementation!)" << endl;
-        cout << "\t13. sort() : to sort the array in an ascending order." << endl;
-        cout << "\t14. expand(num) : to expand the array by num size. (Default is 2x times)." << endl;
-
     }
 
     // TODO 2: add function merge to merge two sorted arrays.
     // TODO 3: add function to perform shift and rotate operations on arrays.
-    // TODO 4: add function to overload + operator for concatenation of arrays.
+    // TODO 4: add function to overload + operator for concatenation of arrays. DONE
+    // TODO 5: add function to increase the size of an array object. (Default is by 2x times) DONE
+    // TODO 6: add preprocessor directives to make the program by default increase the array size by 2x when required.
 };
 
 int main(){
-    ArrayADT arr1(10);
+    ArrayADT::interface();
 
     return 0;
 }
