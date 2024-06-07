@@ -228,6 +228,27 @@ public:
         addr = newArray;
     }
 
+    ArrayADT merge(const ArrayADT& obj1) {
+        int newSize = this->size + obj1.size;
+        int newLength = this->length + obj1.length;
+        ArrayADT temp(newSize);
+
+        int i = 0, j = 0, k = 0;
+        while(i<this->length && j<obj1.length) {
+            if(this->addr[i] < obj1.addr[j]) {
+                temp.addr[k++] = this->addr[i++];
+            } else {
+                temp.addr[k++] = obj1.addr[j++];
+            }
+        }
+        for( ; i<this->length; i++) temp.addr[k++] = this->addr[i];
+        for( ; j<obj1.length; i++) temp.addr[k++] = obj1.addr[j];
+
+        temp.length = newLength;
+
+        return temp;
+    }
+
     static void interface(){
         cout << "Array class written by Shiven Saini!" << endl;
         cout << "Default initialized size of the array is 10 elements." << endl;
@@ -246,7 +267,7 @@ public:
         cout << "\t12. reverseButWorse() : to reverse the array. (Another not recommended implementation!)" << endl;
     }
 
-    // TODO 2: add function merge to merge two sorted arrays.
+    // TODO 2: add function merge to merge two sorted arrays. DONE
     // TODO 3: add function to perform shift and rotate operations on arrays.
     // TODO 4: add function to overload + operator for concatenation of arrays. DONE
     // TODO 5: add function to increase the size of an array object. (Default is by 2x times) DONE
