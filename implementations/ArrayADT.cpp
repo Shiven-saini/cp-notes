@@ -190,6 +190,23 @@ public:
         quickSort(addr, 0, length-1);
     }
 
+    void expand(unsigned int _size=0){
+        /* allocate new array on the heap memory.
+         * copy all the elements upto length number to this new array.
+         * make the addr pointer to point to this new memory location.
+         *  free the memory of older array.
+         */
+        // default size to expand is double.
+        if (_size != 0) size += _size;
+        else size *= 2;
+
+        int* newArray = new int[size];
+        for (int i = 0; i<length; i++) newArray[i] = addr[i];
+
+        delete addr;
+        addr = newArray;
+    }
+
     static void interface(){
         cout << "Array class written by Shiven Saini!" << endl;
         cout << "Default initialized size of the array is 10 elements." << endl;
@@ -207,14 +224,13 @@ public:
         cout << "\t11. reverse() : to reverse the array." << endl;
         cout << "\t12. reverseButWorse() : to reverse the array. (Another not recommended implementation!)" << endl;
         cout << "\t13. sort() : to sort the array in an ascending order." << endl;
+        cout << "\t14. expand(num) : to expand the array by num size. (Default is 2x times)." << endl;
 
     }
 
-    // TODO 1: add function to sort the array.
     // TODO 2: add function merge to merge two sorted arrays.
     // TODO 3: add function to perform shift and rotate operations on arrays.
     // TODO 4: add function to overload + operator for concatenation of arrays.
-    // TODO 5: add function to increase the size of an array object. (Default is by 2x times)
 };
 
 int main(){
