@@ -16,6 +16,30 @@ private:
         a = b;
         b = temp;
     }
+
+    int partition(int* arr, int low, int high) {
+        int pivot = arr[high];
+        int i = low - 1;
+
+        for (int j = low; j < high; j++) {
+            if (arr[j] <= pivot) {
+                i++;
+                swap(arr[i], arr[j]);
+            }
+        }
+        swap(arr[i + 1], arr[high]);
+        return i + 1;
+    }
+
+    void quickSort(int* arr, int low, int high) {
+        if (low < high) {
+            int pivotIndex = partition(arr, low, high);
+
+            quickSort(arr, low, pivotIndex - 1);
+            quickSort(arr, pivotIndex + 1, high);
+        }
+    }
+
 public:
     // Default constructor with empty parameters. (Default size is 10 elements)
     ArrayADT() : size(10), length(0) {
@@ -162,6 +186,10 @@ public:
         delete auxArray;
     }
 
+    void sort(){
+        quickSort(addr, 0, length-1);
+    }
+
     static void interface(){
         cout << "Array class written by Shiven Saini!" << endl;
         cout << "Default initialized size of the array is 10 elements." << endl;
@@ -178,7 +206,10 @@ public:
         cout << "\t10. search(value) : to search for the index of given value." << endl;
         cout << "\t11. reverse() : to reverse the array." << endl;
         cout << "\t12. reverseButWorse() : to reverse the array. (Another not recommended implementation!)" << endl;
+        cout << "\t13. sort() : to sort the array in an ascending order." << endl;
+
     }
+
     // TODO 1: add function to sort the array.
     // TODO 2: add function merge to merge two sorted arrays.
     // TODO 3: add function to perform shift and rotate operations on arrays.
@@ -187,7 +218,7 @@ public:
 };
 
 int main(){
-    ArrayADT::interface();
+    ArrayADT arr1(10);
 
     return 0;
 }
