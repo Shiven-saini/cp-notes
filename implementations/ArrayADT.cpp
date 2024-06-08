@@ -41,6 +41,13 @@ private:
         }
     }
 
+    void reverseBound(int low, int high) {
+        // Approach :- using two sliding pointers method.
+        for(int i=low, j=high; i<j; i++, j--){
+            swap(addr[i], addr[j]);
+        }
+    }
+
 public:
     // Default constructor with empty parameters. (Default size is 10 elements)
     ArrayADT() : size(10), length(0) {
@@ -186,10 +193,7 @@ public:
     }
 
     void reverse(){
-        // Approach :- using two sliding pointers method.
-        for(int i=0, j=length-1; i<j; i++, j--){
-            swap(addr[i], addr[j]);
-        }
+        reverseBound(0, length-1);
     }
 
     void reverseButWorse(){
@@ -226,6 +230,33 @@ public:
 
         delete addr;
         addr = newArray;
+    }
+
+    void leftShift(int d=1) {
+        // Reversal technique
+
+        // Reverse first 'd' elements
+        reverseBound(0, d-1);
+
+        // Reverse the remaining elements
+        reverseBound(d, length-1);
+
+        // Reverse the entire array
+        reverseBound(0, length-1);
+
+    }
+
+    void rightShift(int d=1) {
+        // Algorithm same as above.
+
+        // Reversing last 'd' elements.
+        reverseBound(length-d, length-1);
+
+        // Reversing remaining elements.
+        reverseBound(0, length-d-1);
+
+        // Reversing the entire array.
+        reverseBound(0, length-1);
     }
 
     ArrayADT merge(const ArrayADT& obj1) {
@@ -265,17 +296,21 @@ public:
         cout << "\t10. search(value) : to search for the index of given value." << endl;
         cout << "\t11. reverse() : to reverse the array." << endl;
         cout << "\t12. reverseButWorse() : to reverse the array. (Another not recommended implementation!)" << endl;
+        cout << "\t13. leftShift(dis) : to left shift the array by dis elements (Default 1)" << endl;
+        cout << "\t14. reverseButWorse(dis) : to right shift the array by dis elements (Default 1)" << endl;
+        cout << "\t15. merge(ArrayData obj) : to merge two sorted arrays in one." << endl;
+                
     }
 
     // TODO 2: add function merge to merge two sorted arrays. DONE
-    // TODO 3: add function to perform shift and rotate operations on arrays.
+    // TODO 3: add function to perform shift and rotate operations on arrays. DONE
     // TODO 4: add function to overload + operator for concatenation of arrays. DONE
     // TODO 5: add function to increase the size of an array object. (Default is by 2x times) DONE
-    // TODO 6: add preprocessor directives to make the program by default increase the array size by 2x when required.
+    // TODO 6: add preprocessor directives to make the program by default increase the array size by 2x when required. { LATER TOGETHER }
 };
 
 int main(){
     ArrayADT::interface();
-
+    
     return 0;
 }
